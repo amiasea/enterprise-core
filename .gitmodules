@@ -1,6 +1,3 @@
 [submodule "ui"]
-    path = Amiasea.Enterprise.Core.Ui
-    url = https://github.com/amiasea/enterprise-core-ui.git
-[submodule "Amiasea.Enterprise.Core.Ui"]
 	path = Amiasea.Enterprise.Core.Ui
 	url = https://github.com/amiasea/enterprise-core-ui.git
