@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.11.2" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="11.0.0-rc.1.26425.128" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="11.0.0-rc.1.26425.128" />
+    <PackageReference Include="WolverineFx.RuntimeCompilation" Version="6.40.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Amiasea.Enterprise.Common\dotnet\Amiasea.Enterprise.Common\Amiasea.Enterprise.Common.csproj" />
+    <ProjectReference Include="..\Amiasea.Enterprise.Core.Api\Amiasea.Enterprise.Core.Api.csproj" />
+    <ProjectReference Include="..\Amiasea.Enterprise.Core.Data\entity\Amiasea.Enterprise.Core.Data.Entity\Amiasea.Enterprise.Core.Data.Entity\Amiasea.Enterprise.Core.Data.Entity.csproj" />
+    <ProjectReference Include="..\Amiasea.Enterprise.Test.Capability.Api\Amiasea.Enterprise.Test.Capability.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

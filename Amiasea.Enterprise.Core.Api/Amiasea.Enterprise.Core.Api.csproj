@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <ProjectReference Include="..\Amiasea.Enterprise.Core.Data\entity\Amiasea.Enterprise.Core.Data.Entity\Amiasea.Enterprise.Core.Data.Entity\Amiasea.Enterprise.Core.Data.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <PackageReference Include="WolverineFx" Version="6.40.0" />
+    <PackageReference Include="WolverineFx.EntityFrameworkCore" Version="6.40.0" />
+    <PackageReference Include="WolverineFx.Http" Version="6.40.0" />
+  </ItemGroup>
+</Project>
